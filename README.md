@@ -27,4 +27,4 @@ The intent of choosing CC BY-NC-SA 4.0 is to allow individuals and instructors a
 
 ## Acknowledgments
 
-This lecture was based upon content from the [3D User Interfaces Fall 2020](https://github.blairmacintyre.me/3dui-class-f20) course by Blair MacIntyre.
+This lecture was based upon content from the [Virtual Reality and 3D User Interfaces Fall 2020](https://github.com/CSCI-5619-Fall-2020) course by Evan Suma Rosenberg and the [3D User Interfaces Fall 2020](https://github.blairmacintyre.me/3dui-class-f20) course by Blair MacIntyre.
