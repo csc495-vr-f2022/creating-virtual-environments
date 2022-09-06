@@ -59,6 +59,10 @@ class Game
             meshes[0].name = "dragonite";
             meshes[0].scaling = new Vector3(10, 10, 10);
             meshes[0].rotation = new Vector3(0, Math.PI, 0);
+            meshes[0].position.y -= 1.7;
+
+            let dragoniteMaterial = <StandardMaterial>meshes[0].material;
+            dragoniteMaterial.emissiveColor = new Color3(1, 1, 1);
         });
 
         var world = SceneLoader.ImportMesh("", "assets/models/", "world.glb", scene, (meshes) => {
