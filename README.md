@@ -1,6 +1,4 @@
-# Lecture 4: Creating Virtual Environments
-
-Detailed explanation of this code can be found in the lecture [video](https://mediaspace.umn.edu/media/1_zlzfxsfh).
+Creating Virtual Environments
 
 ## Topics
 
@@ -21,7 +19,7 @@ Modify the existing scene by moving at least three mesh objects loaded in `world
 
 ## License
 
-Material for [CSCI 5619 Fall 2020](https://canvas.umn.edu/courses/194179) by [Evan Suma Rosenberg](https://illusioneering.umn.edu/) is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+Material for [CSC 495 Virtual Reality Fall 2020](https://github.com/csc495-vr-f2022/) by [Regis Kopper](https://regiskopper.com/) is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 The intent of choosing CC BY-NC-SA 4.0 is to allow individuals and instructors at non-profit entities to use this content.  This includes not-for-profit schools (K-12 and post-secondary). For-profit entities (or people creating courses for those sites) may not use this content without permission (this includes, but is not limited to, for-profit schools and universities and commercial education sites such as Coursera, Udacity, LinkedIn Learning, and other similar sites).   
 
