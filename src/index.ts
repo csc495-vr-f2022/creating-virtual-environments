@@ -15,6 +15,7 @@ import { UniversalCamera } from "@babylonjs/core/Cameras/universalCamera";
 import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
 import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
 import { StandardMaterial } from "@babylonjs/core";
+import { TransformNode } from "@babylonjs/core";
 
 // loaders
 //import "@babylonjs/core/Loading/Plugins/babylonFileLoader";
@@ -53,27 +54,33 @@ class Game
         // Default intensity is 1. Let's dim the light a small amount
         light.intensity = 1.0;
 
-        
-        var count = 0;
+        // create a root node for the scene
+        let root = new TransformNode("root", scene);
+
+        SceneLoader.ImportMesh("", "assets/models/", "world.glb", scene, (meshes) => {
+            meshes[0].name = "world";
+            meshes[0].position = new Vector3(-75, -22, -50);
+
+            //add the mesh to root
+            meshes[0].parent = root;
+
+            // meshes.forEach((mesh) => {
+            //     console.log("Loading mesh: " + mesh.name);
+            // })
+        });
+
         SceneLoader.ImportMesh("", "assets/models/", "dragonite.obj", scene, (meshes) => {
             meshes[0].name = "dragonite";
             meshes[0].scaling = new Vector3(10, 10, 10);
             meshes[0].rotation = new Vector3(0, Math.PI, 0);
             meshes[0].position.y -= 1.7;
 
+            //add the mesh to root
+            meshes[0].parent = root;
+
             let dragoniteMaterial = <StandardMaterial>meshes[0].material;
             dragoniteMaterial.emissiveColor = new Color3(1, 1, 1);
         });
-
-        var world = SceneLoader.ImportMesh("", "assets/models/", "world.glb", scene, (meshes) => {
-            meshes[0].name = "world";
-            meshes[0].position = new Vector3(-75, -22, -50);
-
-            meshes.forEach((mesh) => {
-                console.log("Loading mesh: " + mesh.name);
-            })
-        });
-
 
         // Show the debug scene explorer and object inspector
         // You should comment this out when you build your final program 
