@@ -10,12 +10,6 @@
 3. Exporting scene assets from Unity
    - [RPG Poly Pack - Lite](https://assetstore.unity.com/packages/3d/environments/landscapes/rpg-poly-pack-lite-148410) from the Unity Asset Store
    - You will need to build the [UnityGLTF plugin](https://github.com/KhronosGroup/UnityGLTF) from source if you are using a platform other than Windows.
-4. Automated deployment to the web
-   - Note that you will need to modify the `deploy.sh` script with your information before it will work.
-
-## Participation Exercise
-
-Modify the existing scene by moving at least three mesh objects loaded in `world.glb`.  To do this, you should use the debug inspector to find the node names and determine new position/rotation/scale values to use in your code.  You should submit the modified `index.ts` file on Canvas (do not include any other files).
 
 ## License
 
